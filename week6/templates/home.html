@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+<head>
+    <title>My Webpage</title>
+</head>
+<body> <CENTER>
+    {% for item in navigation %}
+        | <a href="{{ item.href }}">{{ item.caption }}</a> |
+    {% endfor %}
+</CENTER>
+
+<CENTER> <h1>My Webpage</h1></CENTER>   
+   <CENTER> <p class="well">Welcome to {{ welcome }}</p></CENTER>   
+</body>
+</html>

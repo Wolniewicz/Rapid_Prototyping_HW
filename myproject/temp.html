@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      var first = $( "#firstname" ).val();
+      var last = $( "#lastname" ).val();
+
+      $.ajax({
+        url: "test.html",
+        firstname: first,
+        lastname: last
+      }).done(function() {
+        $( "#complete" ).text("Complete!");
+      });
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+  <button>Submit</button>
+
+  <p id="complete"></p>
+
+    <form>
+      First name: <input id="firstname" type="text" name="firstname"><br>
+      Last name: <input id="lastname" type="text" name="lastname">
+    </form>
+
+</body>
+</html>
