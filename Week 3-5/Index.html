@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jacob's Personal Page</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://code.jquery.com/jquery.js"></script>
+
+     <script src="js/jquery-ui-1.10.4/ui/jquery-ui.js"></script>
+
+     <link rel="stylesheet" href="js/jquery-ui-1.10.4/themes/base/jquery.ui.all.css">
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/javascript.js"></script>
+     <div class="container">
+      <div class="clearfix">
+       <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Jacob Wolniewicz</a>
+       </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <li class="active"><a href="#">Home</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="resume.html">Resume</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <button id="opener">Contact me!</button>
+       </ul>
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+
+
+ <div class="row">
+
+  <div class="col-xs-4">
+
+
+   <!--  Carousel - consult the Twitter Bootstrap docs at 
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <a href="#" rel="tooltip" title="Me hiking in Scotland!"><img src="images/me.jpg" alt="Me" width="375" height="300"></a>
+
+      <div class="carousel-caption">
+        <p></p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/microsoft_logo.png" alt="Me" width="375" height="375">
+      <div class="carousel-caption">
+        <p>Going full time at microsoft!</p>
+      </div>
+    </div>
+    <!--<div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="" />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>-->
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+    <script type="text/javascript">
+
+jQuery(document).bind('keyup', function(e) {
+
+  if(e.keyCode==39){
+  jQuery('a.carousel-control.right').trigger('click');
+  }   
+
+  else if(e.keyCode==37){
+  jQuery('a.carousel-control.left').trigger('click');
+  }
+
+});
+
+</script>
+</div><!-- /.carousel -->
+</div>
+<div class="col-xs-8">
+ <h2>Welcome to my Webpage</h2>
+
+ <p>
+  I am a computer programmer and will be graduating with a BS from the University of Colorado at Boulder in May 2014 with a degree in Computer Science with a focus on human centered computing.
+</p>
+</div>
+</div>
+
+<div class="row">
+
+
+  <div class="col-xs-12">
+
+   <div class="col-md-4">
+    <h3>
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        Professional
+      </a>
+    </h3>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>So far I have completed several internships at startups, followed by one at Microsoft where I will start working this upcoming fall.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3>
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        About Me
+      </a>
+    </h3>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>I'm currently finishing my last year in computer science at CU Boulder. In my free time I enjoy brewing beer, skiing and traveling.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3>
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        Projects
+      </a>
+    </h3>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p>I'm currently working on a personal project to track what beers people have tried. I'm also building a data visualizer site using d3.js.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+<div id="dialog" title="Basic dialog">
+  <p>You can reach me at my email jacob@wolniewicz.com. Also feel free to reach out ot me on linkedIn.</p>
+</div>
+</body>
+</html>
